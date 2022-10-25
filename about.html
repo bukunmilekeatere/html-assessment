@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--The title tag changes the text that shows up in the tab on the web browser. -->
+    <title>About</title>
+    <!--The style tag is used to define styling information in a document. 
+      Inside this tag, instructions on rendering are made.-->
+    <style>
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #000000;
+      }
+
+      li {
+        float: left;
+      }
+
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      li a:hover {
+        background-color: #2f4f4f;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Holds the heading and navigational links for the webpage-->
+    <header>
+      <!--This tag will center the title of the website-->
+      <center>
+        <!-- "Power to the Reader" will be displayed as the title of the website. -->
+        <h1>Power to the Reader</h1>
+      </center>
+      <nav>
+        <ul>
+          <!--These links will display on a menu bar for the user.-->
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li><a href="book-gallery.html">Book Gallery</a></li>
+          <li>
+            <a href="book-survey.html">Book Survey </a>
+          </li>
+          <li><a href="info.html">Info</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <br />
+
+      <!--This tag will center the heading-->
+      <center>
+        <h3>ABOUT</h3>
+      </center>
+      <br />
+      <!-- Will display the text below, underlined. -->
+      <p><u>The Story.</u></p>
+      <!-- Displays text about the website. -->
+      <p>
+        Power to the Reader is an online book review network that connects us
+        together because of our love of books. Our mission is to share that love
+        for books to as many people as we can reach. To provide inspiration, and
+        motivation to our readers by giving personal insight needed to help find
+        their next read or possibly favorite book. Basically, this serves as a
+        hub for bookworms. Enjoy!
+      </p>
+      <br />
+      <!-- Underlined this as a means of text decoration and the draw attention to it.-->
+      <p><u>The Team.</u></p>
+      <!-- Displays text about me. -->
+      <p>
+        Hi there! I am Bukunmi. I'm the creator and manager of this website. I
+        am deeply passionate about reading and the personal differences in
+        interpretations of books. Power to the Reader is a means for me to
+        communicate analysis of different books, author bios, and just general
+        book talk. It's also a way for me to know other's inputs, like i stated
+        earlier it is always nice to hear other people's take on things. You can
+        view this as an online version of a book club. I believe you can inspire
+        and be inspired today, just browse with an open mind. Welcome to Power
+        to the Reader!
+      </p>
+
+      <!-- Holds all inputs for this form.-->
+      <form name="user-questions" id="questions" method="get">
+        <br />
+
+        <!--
+        This is a textarea input. The user will be able to enter any questions they have
+      -->
+        <label for="comments">Questions About the Website:</label>
+        <br />
+        <textarea
+          name="additionalComments"
+          id="comments"
+          rows="10"
+          cols="65"></textarea>
+        <br />
+        <br />
+
+        <!-- Displays a submit button so that input from user can be received-->
+        <input
+          type="submit"
+          name="submitButton"
+          id="submit"
+          value="Click This to Submit Your Question" />
+
+        <br />
+        <br />
+
+        <!-- A reset button, the text area will be cleared of all input if user clicks this-->
+        <input
+          type="reset"
+          name="clearForm"
+          id="clear"
+          value="Click This to Clear All Inputs" />
+
+        <!--Defines the footer at the bottom of the webpage-->
+        <footer>
+          <!-- Displays copyright information at the bottom of the webpage. -->
+          <p>&#169; Oluwabukunmi Leke-Atere</p>
+        </footer>
+      </form>
+    </main>
+  </body>
+</html>

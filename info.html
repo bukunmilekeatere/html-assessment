@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Info</title>
+    <!--The style tag is used to define styling information in a document. 
+      Inside this tag, instructions on rendering are made.-->
+    <style>
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #000000;
+      }
+
+      li {
+        float: left;
+      }
+
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      li a:hover {
+        background-color: #2f4f4f;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Holds the heading and navigational links for the webpage-->
+    <header>
+      <!--This tag will center the title of the website-->
+      <center>
+        <!-- "Power to the Reader" will be displayed as the title of the website. -->
+        <h1>Power to the Reader</h1>
+      </center>
+      <nav>
+        <ul>
+          <!--These links will display on a menu bar for the user.-->
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li><a href="book-gallery.html">Book Gallery</a></li>
+          <li>
+            <a href="book-survey.html">Book Survey </a>
+          </li>
+          <li><a href="info.html">Info</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <br />
+      <!-- This will center the 'info' heading-->
+      <center>
+        <h3>INFO</h3>
+      </center>
+      <br />
+
+      <!-- This will center the youtube video-->
+      <center>
+        <a href="https://www.youtube.com/embed/pRTWFqhEDeo" target="_blank">
+          Click this link to watch this Youtube video featured below.
+        </a>
+        <br />
+
+        <!-- This will display the youtube video on the webpage-->
+        <iframe
+          width="50%"
+          height="400px"
+          src="https://www.youtube.com/embed/pRTWFqhEDeo"
+          title="This is an IFrame that displays the YouTube video 
+          that explains why you should read books and the benefits of reading."
+          frameborder="1"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </center>
+    </main>
+    <footer>
+      <!--This copyright information will be displayed at the bottom of the webpage-->
+      <p>&#169; Oluwabukunmi Leke-Atere</p>
+    </footer>
+  </body>
+</html>

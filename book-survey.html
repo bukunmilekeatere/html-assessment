@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Survey</title>
+    <!--The style tag is used to define styling information in a document. 
+      Inside this tag, instructions on rendering are made.-->
+    <style>
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #000000;
+      }
+
+      li {
+        float: left;
+      }
+
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      li a:hover {
+        background-color: #2f4f4f;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Holds the heading and navigational links for the webpage-->
+    <header>
+      <!--This tag will center the title of the website-->
+      <center>
+        <!-- This is an example of a heading tag used for titles. -->
+        <h1>Power to the Reader</h1>
+      </center>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li><a href="book-gallery.html">Book Gallery</a></li>
+          <li>
+            <a href="book-survey.html">Book Survey </a>
+          </li>
+          <li><a href="info.html">Info</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <br />
+      <!--This tag will center the heading-->
+      <center>
+        <!--The title of this webpage will be displayed-->
+        <h3>BOOK GALLERY</h3>
+      </center>
+      <br />
+      <!-- Holds all inputs for this form.-->
+      <form name="book-survey" id="book" method="get">
+        <!-- Will display a text input for user to type the book name-->
+        <label for="book-name">
+          <br />
+          Please Enter the Book You Suggest I Read [required]:
+        </label>
+        <input type="text" name="title" id="book-name" required />
+        <br />
+
+        <!-- Will display a text input for user to type author's name -->
+        <label for="author-name">
+          <br />
+          Please Enter the Author's Name [required]:
+        </label>
+        <input type="text" name="author" id="author-name" required />
+        <br />
+        <br />
+
+        <!-- This is a calendar input that will ask the user for 
+          the month and year of publication for the book.-->
+        <form action="/action_page.php">
+          <label for="publicationdate"
+            >Publication Date (month and year):</label
+          >
+          <input type="month" id="publicationdate" name="publicationdate" />
+          <input type="submit" />
+        </form>
+
+        <br />
+        <br />
+
+        <!-- Holds the genres, which are related inputs-->
+        <fieldset form="book">
+          <!-- Will display the title for the input-->
+          <legend>What genre is this book:</legend>
+
+          <input type="radio" name="book-genre" id="fantasy" value="fantasy" />
+          <!-- Will display the label for the button-->
+          <label for="fantasy">Fantasy</label>
+          <br />
+
+          <input type="radio" name="book-genre" id="romance" value="romance" />
+          <!-- Will display the label for the button-->
+          <label for="romance">Romance</label>
+          <br />
+
+          <input
+            type="radio"
+            name="book-genre"
+            id="thriller"
+            value="thriller" />
+          <!-- Will display the label for the button-->
+          <label for="thriller">Thriller</label>
+          <br />
+
+          <input type="radio" name="book-genre" id="horror" value="horror" />
+          <!-- Will display the label for the button-->
+          <label for="horror">Horror</label>
+          <br />
+
+          <input type="radio" name="book-genre" id="other" value="other" />
+          <!-- Will display the label for the button-->
+          <label for="other">Other</label>
+        </fieldset>
+        <br />
+        <br />
+
+        <!-- Holds the types of emotions, which are related inputs-->
+        <fieldset form="book">
+          <!-- Will display the title for the input-->
+          <legend>What type of emotions should i be prepared to feel:</legend>
+
+          <input type="checkbox" name="sadEmotion" id="sad" value="sad" />
+          <!-- Will display the label for the checkbox-->
+          <label for="sad">Sadness</label>
+          <br />
+
+          <input type="checkbox" name="happyEmotion" id="happy" value="happy" />
+          <!-- Will display the label for the checkbox-->
+          <label for="happy">Happiness</label>
+          <br />
+
+          <input type="checkbox" name="fearEmotion" id="fear" value="fear" />
+          <!-- Will display the label for the checkbox-->
+          <label for="fear">Fear</label>
+          <br />
+          <br />
+
+          <label
+            >Do you have any other examples of emotions i should expect to feel
+            from reading this book?
+          </label>
+          <input type="text" name="expectedEmotion" id="expected-emotion" />
+        </fieldset>
+        <br />
+
+        <!-- This will display a smaller sized title -->
+        <h4>THE RATING</h4>
+        <form action="/action_page.php">
+          <input type="checkbox" id="rating1" name="rating1" value="0%-20%" />
+          <!-- Will display the label for the checkbox-->
+          <label for="rating1">1</label><br />
+          <input type="checkbox" id="rating2" name="rating2" value="20%-40%" />
+          <!-- Will display the label for the checkbox-->
+          <label for="rating2">2</label><br />
+          <input type="checkbox" id="rating3" name="rating3" value="40%-60%" />
+          <!-- Will display the label for the checkbox-->
+          <label for="rating3">3</label><br />
+          <input type="checkbox" id="rating4" name="rating4" value="60%-80%" />
+          <!-- Will display the label for the checkbox-->
+          <label for="rating4">4</label><br />
+          <input type="checkbox" id="rating5" name="rating5" value="80%-100%" />
+          <!-- Will display the label for the checkbox-->
+          <label for="rating5">5</label>
+          <br />
+          <br />
+
+          <!--
+          This is a textarea input. The user will be able to enter any comments they have
+        -->
+          <label for="comments">Additional Comments:</label>
+          <br />
+          <textarea
+            name="additionalComments"
+            id="comments"
+            rows="10"
+            cols="50"></textarea>
+          <br />
+          <br />
+
+          <!-- User will be able to submit their phone numbers for contact-->
+          <label for="telephone"
+            >Please enter your telephone number [Example:1-555-867-5309]:</label
+          >
+          <input
+            type="tel"
+            name="userTel"
+            id="telephone"
+            minlength="14"
+            maxlength="22" />
+          <br />
+          <br />
+
+          <!-- Displays a submit button so that input from user can be received-->
+          <input
+            type="submit"
+            name="submitButton"
+            id="submit"
+            value="Click This to Submit Your Suggestion" />
+          <br />
+          <br />
+
+          <!-- A reset button, the text area will be cleared of all input if user clicks this-->
+          <input
+            type="reset"
+            name="clearForm"
+            id="clear"
+            value="Click This to Clear All Inputs" />
+
+          <footer>
+            <p>&#169; Oluwabukunmi Leke-Atere</p>
+          </footer>
+        </form>
+      </form>
+    </main>
+  </body>
+</html>
